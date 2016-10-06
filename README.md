@@ -54,3 +54,11 @@ CONTAINER ID        IMAGE                   COMMAND                  CREATED    
 700cbb0b626d        spboyer/superhero-api   "/bin/sh -c 'dotnet s"   45 seconds ago      Up 43 seconds       0.0.0.0:32775->80/tcp   superheroapi_superhero-api_1
 ```
 
+If there are changes to the application and the images must be rebuilt, remove the image first.
+
+```
+$ docker rmi 700c
+
+$ docker-compose up -d  
+```
+

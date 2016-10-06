@@ -41,8 +41,16 @@ services:
           - "80"
 ```
 
-Need to run the following command(s)
+Need to run the following command to start/build container 
 ```
-docker-compose up -d
+
+$ docker-compose up -d
+
+# get the port the application is running under on localhost
+$ docker ps -a
+
+
+CONTAINER ID        IMAGE                   COMMAND                  CREATED             STATUS              PORTS                   NAMES
+700cbb0b626d        spboyer/superhero-api   "/bin/sh -c 'dotnet s"   45 seconds ago      Up 43 seconds       0.0.0.0:32775->80/tcp   superheroapi_superhero-api_1
 ```
 

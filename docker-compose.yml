@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+    superhero-api:
+        image: spboyer/superhero-api${TAG}
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports: 
+          - "80"

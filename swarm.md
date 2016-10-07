@@ -1,4 +1,5 @@
 # Swarm creation
+
 Initialize the Swarm cluster on your machine
 ```
 docker swarm init
@@ -18,7 +19,7 @@ dwspfsm279d6  superhero-api  1/1       spboyer/superhero-api
 Scaling the application on the cluster, use the `scale` command 
 ```
 $ docker service scale superhero-api=3
-``
+```
 
 Run `docker ps` to see all of the containers
 ```

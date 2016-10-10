@@ -65,3 +65,7 @@ $ docker-compose up -d
 ## Docker Swarm
 
 [Details on implementing Swarm](swarm.md) 
+
+## Swashbuckle (Swagger) for API Documentation
+
+[Details oon implementing Swashbuckle](swagger.md)

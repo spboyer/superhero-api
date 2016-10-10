@@ -4,9 +4,20 @@ using GenFu;
 
 namespace superhero
 {
+    /// <summary>
+    /// API endpoint for generating random Superhero or getting a Superhero name for a Persons name
+    /// </summary>
     [Route("api/[controller]")]
     public class HeroesController : Controller
     {
+        /// <summary>
+        /// Returns a Person object with the Superhero name generated
+        /// </summary>
+        /// <param name="firstName">First Name of the Person object</param>
+        /// <param name="lastName">Last Name of the Person object</param>
+        /// <returns>New Person object</returns>
+        /// <response code="200"></response>
+        [ProducesResponseTypeAttribute(typeof(Person), 200)]
         [HttpGet("{firstName}/{lastName}")]
         public Person Get(string firstName, string lastName)
         {
@@ -16,6 +27,15 @@ namespace superhero
             return p;
         }
 
+        /// <summary>
+        /// Returns a random Person object using GenFu
+        /// </summary>
+        /// <remarks>
+        /// GenFu is an Open Source library for creating contextual based test data
+        /// is available at https://github.com/MisterJames/GenFu
+        /// </remarks>
+        /// <returns>New Person object</returns>
+        /// <response code="200"></response>
         [HttpGet()]
         public Person Get()
         {

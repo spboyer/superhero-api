@@ -7,6 +7,7 @@ namespace superhero
     /// API endpoint for generating random Legion of Superheroes
     /// </summary>
     [Route("api/[controller]")]
+    [Produces("application/json")]
     public class LegionsController : Controller
     {
         
@@ -16,6 +17,7 @@ namespace superhero
         /// <param name="numberOfMembers">Number of Person objects to include in Team</param>
         [ProducesResponseTypeAttribute(typeof(Legion), 200)]
         [HttpGet("{numberOfMembers}")]
+      
         public Legion Get(int numberOfMembers)
         {
         

@@ -8,6 +8,7 @@ namespace superhero
     /// API endpoint for generating random Superhero or getting a Superhero name for a Persons name
     /// </summary>
     [Route("api/[controller]")]
+    [Produces("application/json")] 
     public class HeroesController : Controller
     {
         /// <summary>

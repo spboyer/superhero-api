@@ -68,4 +68,4 @@ $ docker-compose up -d
 
 ## Swashbuckle (Swagger) for API Documentation
 
-[Details oon implementing Swashbuckle](swagger.md)
+[Details on implementing Swashbuckle](swagger.md)

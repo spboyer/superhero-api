@@ -1,15 +1,23 @@
 using System;
 using Microsoft.AspNetCore.Mvc;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace superhero
 {
+    /// <summary>
+    /// API endpoint for generating random Legion of Superheroes
+    /// </summary>
     [Route("api/[controller]")]
+    [Produces("application/json")]
     public class LegionsController : Controller
     {
-        // GET api/values
+        
+        /// <summary>
+        /// Creates a Legion object with a Team equal to the amount of members requested
+        /// </summary>
+        /// <param name="numberOfMembers">Number of Person objects to include in Team</param>
+        [ProducesResponseTypeAttribute(typeof(Legion), 200)]
         [HttpGet("{numberOfMembers}")]
+      
         public Legion Get(int numberOfMembers)
         {
         

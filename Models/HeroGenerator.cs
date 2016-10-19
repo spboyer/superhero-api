@@ -2,12 +2,16 @@ using System.Collections.Generic;
 
 namespace superhero
 {
+
+    /// <summary>
+    /// First Name of the Person object
+    /// </summary>    
     public class HeroGenerator
     {
-        public HeroGenerator()
-        {
 
-        }
+        /// <summary>
+        /// Static method to create Superhero name 
+        /// </summary>
         public static string GetHeroName(string firstName, string lastName)
         {
             var f = firstName.Substring(0, 1);
@@ -16,11 +20,17 @@ namespace superhero
             return string.Concat(GetHeroFirst(f), " ", GetHeroLast(l));
         }
 
+        /// <summary>
+        /// Gets the Superhero First Name of the Person object based on the First Name initial
+        /// </summary>       
         private static string GetHeroFirst(string f)
         {
             return new HeroFirst()[f.ToUpper()];
         }
 
+        /// <summary>
+        /// Gets the Superhero Last Name of the Person object based on the Last Name initial
+        /// </summary>   
         private static string GetHeroLast(string l)
         {
             return new HeroLast()[l.ToUpper()];
@@ -30,6 +40,9 @@ namespace superhero
 
 
 
+    /// <summary>
+    /// Superhero First Names Dictionary
+    /// </summary>       
     public class HeroFirst : Dictionary<string, string>
     {
         private void AddValue(string letter, string value)
@@ -37,6 +50,9 @@ namespace superhero
             Add(letter, value);
         }
 
+        /// <summary>
+        /// Indexed First names 
+        /// </summary>
         public HeroFirst()
         {
             AddValue("A", "Captain");
@@ -69,6 +85,9 @@ namespace superhero
     }
 
 
+    /// <summary>
+    /// Superhero Last Names Dictionary
+    /// </summary>      
     public class HeroLast : Dictionary<string, string>
     {
         private void AddValue(string letter, string value)
@@ -76,6 +95,9 @@ namespace superhero
             Add(letter, value);
         }
 
+        /// <summary>
+        /// Indexed Last names 
+        /// </summary>
         public HeroLast()
         {
             AddValue("A", "Lightning");

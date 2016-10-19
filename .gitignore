@@ -234,3 +234,4 @@ _Pvt_Extensions
 .fake/
 
 publish/
+*/.DS_Store

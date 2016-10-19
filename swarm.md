@@ -34,10 +34,73 @@ Swarm has round robin load balancing built in, using `curl` from the bash window
 
 ```
 $ curl http://localhost:5000/api/legions/5
-{"guid":"181e74a7-57a8-46d0-8524-5fde4f353ca1","expires":"2016-10-06T20:34:04.042607Z","issuer":"02164bdc7f2c","team":[{"firstName":"Miranda","lastName":"Timms","heroName":"Incredible Shadow"},{"firstName":"Cameron","lastName":"Perez","heroName":"The America"},{"firstName":"Rebecca","lastName":"Young","heroName":"Power Skull"},{"firstName":"Caroline","lastName":"Powell","heroName":"The America"},{"firstName":"Jack","lastName":"Radcliff","heroName":"Dark Doom"}]}shayneboyer @ ~/github/spboyer/superhero-api$ (master)
+{
+  "guid": "181e74a7-57a8-46d0-8524-5fde4f353ca1",
+  "expires": "2016-10-06T20:34:04.042607Z",
+  "issuer": "02164bdc7f2c",
+  "team": [
+    {
+      "firstName": "Miranda",
+      "lastName": "Timms",
+      "heroName": "Incredible Shadow"
+    },
+    {
+      "firstName": "Cameron",
+      "lastName": "Perez",
+      "heroName": "The America"
+    },
+    {
+      "firstName": "Rebecca",
+      "lastName": "Young",
+      "heroName": "Power Skull"
+    },
+    {
+      "firstName": "Caroline",
+      "lastName": "Powell",
+      "heroName": "The America"
+    },
+    {
+      "firstName": "Jack",
+      "lastName": "Radcliff",
+      "heroName": "Dark Doom"
+    }
+  ]
+}
+
 
 $ curl http://localhost:5000/api/legions/5
-{"guid":"d15b16d6-de09-4cf2-9367-20b806c8139d","expires":"2016-10-06T20:34:12.056385Z","issuer":"1885089f097a","team":[{"firstName":"Catherine","lastName":"Rogers","heroName":"The Doom"},{"firstName":"Vanessa","lastName":"Chambers","heroName":"Metal Hulk"},{"firstName":"Christina","lastName":"Brugger","heroName":"The Knight"},{"firstName":"Brandon","lastName":"Powell","heroName":"Night America"},{"firstName":"Madison","lastName":"Taylor","heroName":"Incredible Shadow"}]}shayneboyer @ ~/github/spboyer/superhero-api$ (master)
+{
+  "guid": "d15b16d6-de09-4cf2-9367-20b806c8139d",
+  "expires": "2016-10-06T20:34:12.056385Z",
+  "issuer": "1885089f097a",
+  "team": [
+    {
+      "firstName": "Catherine",
+      "lastName": "Rogers",
+      "heroName": "The Doom"
+    },
+    {
+      "firstName": "Vanessa",
+      "lastName": "Chambers",
+      "heroName": "Metal Hulk"
+    },
+    {
+      "firstName": "Christina",
+      "lastName": "Brugger",
+      "heroName": "The Knight"
+    },
+    {
+      "firstName": "Brandon",
+      "lastName": "Powell",
+      "heroName": "Night America"
+    },
+    {
+      "firstName": "Madison",
+      "lastName": "Taylor",
+      "heroName": "Incredible Shadow"
+    }
+  ]
+}
 
 ```
 

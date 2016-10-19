@@ -5,14 +5,8 @@ using Microsoft.Extensions.Configuration;
 
 namespace superhero
 {
-    /// <summary>
-    /// Program Main
-    /// </summary>
     public class Program
     {
-        /// <summary>
-        /// Entry point of the application
-        /// </summary>
         public static void Main(string[] args)
         {
             var config = new ConfigurationBuilder()

@@ -5,6 +5,6 @@ services:
         image: spboyer/superhero-api${TAG}
         build:
             context: .
-            dockerfile: Dockerfile
+            dockerfile: api/Dockerfile
         ports: 
           - "80"

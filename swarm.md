@@ -10,7 +10,7 @@ Create the service on the swarm cluster.  This initializes a single instance.
 docker service --publish 5000:80 --name superhero-api spboyer/superhero-api
 ```
 
-Run `docker service ls` to get the list iof te services running on the cluster
+Run `docker service ls` to get the list of the services running on the cluster
 ```
 ID            NAME          REPLICAS  IMAGE                  COMMAND
 dwspfsm279d6  superhero-api  1/1       spboyer/superhero-api

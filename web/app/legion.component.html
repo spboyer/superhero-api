@@ -1,3 +1,11 @@
-{{ legion.guid }}<br/>
-{{ legion.expires }}<br/>
-{{ legion.issuer }}<br/>
+guid: {{ legion?.guid }}<br/>
+expires: {{ legion?.expires }}<br/>
+machine: {{ legion?.issuer }}<br/>
+<div>
+    Heroes:
+    <ul>
+        <li *ngFor="let person of legion?.team">
+            {{ person.heroName }}
+        </li>
+    </ul>
+</div>

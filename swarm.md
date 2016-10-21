@@ -142,7 +142,7 @@ Start API service on the swarm cluser with three replicas
 docker service create --name superhero-api --network app --replicas 3 spboyer/superhero-api
 ```
 
-Start tne nginx container on the cluser using the `global` mode, this deploys nginx to each of the API instances
+Start the nginx container on the cluser using the `global` mode, this deploys nginx to each of the API instances
 ```
 docker service create --name nginx-hero --mode=global --network app --publish 5000:80 nginx-hero
 ```

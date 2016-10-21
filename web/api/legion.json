@@ -1,0 +1,35 @@
+{
+    "data": 
+        {
+            "guid": "181e74a7-57a8-46d0-8524-5fde4f353ca1",
+            "expires": "2016-10-06T20:34:04.042607Z",
+            "issuer": "02164bdc7f2c",
+            "team": [
+                {
+                    "firstName": "Miranda",
+                    "lastName": "Timms",
+                    "heroName": "Incredible Shadow"
+                },
+                {
+                    "firstName": "Cameron",
+                    "lastName": "Perez",
+                    "heroName": "The America"
+                },
+                {
+                    "firstName": "Rebecca",
+                    "lastName": "Young",
+                    "heroName": "Power Skull"
+                },
+                {
+                    "firstName": "Caroline",
+                    "lastName": "Powell",
+                    "heroName": "The America"
+                },
+                {
+                    "firstName": "Jack",
+                    "lastName": "Radcliff",
+                    "heroName": "Dark Doom"
+                }
+            ]
+        }
+}
